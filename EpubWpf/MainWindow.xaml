@@ -1,0 +1,19 @@
+﻿<Window x:Class="EpubWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EpubWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="683*"/>
+            <ColumnDefinition Width="118*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Add Book" HorizontalAlignment="Left" Margin="18,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.577,-3.026" Height="34" Width="73" Click="AddBook" Grid.Column="1"/>
+        <ListView x:Name="Kitaplar" Margin="0,0,0,10" SelectionMode="Single" SelectionChanged="KitapSeçimi">
+
+        </ListView>
+    </Grid>
+</Window>

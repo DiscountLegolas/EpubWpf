@@ -1,0 +1,38 @@
+﻿<Window x:Class="EpubWpf.OkumaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EpubWpf"
+        mc:Ignorable="d"
+        Title="OkumaWindow" Height="450" Width="800" SizeChanged="ChangeOK">
+    <Window.Resources>
+        <ContextMenu x:Key="cm" StaysOpen="True">
+            <MenuItem Header="Not Ekle" Click="MenuItem_Click" IsEnabled="True" Name="Not"/>
+        </ContextMenu>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <WebBrowser Name="OkumaSayfası">
+        </WebBrowser>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="5" BorderBrush="LightGray" Background="Aquamarine">
+                <Image Name="BookMark" Width="80" Height="80" PreviewMouseLeftButtonDown="BookMarkClick" />
+            </Border>
+            <Border BorderThickness="5" BorderBrush="LightGray" Background="Aquamarine" Grid.Row="1" >
+                <Image Name="FontUp" Width="80" Height="80" PreviewMouseLeftButtonDown="FontUpClick" />
+            </Border>
+            <Border BorderThickness="5" BorderBrush="LightGray" Background="Aquamarine" Grid.Row="2">
+                <Image Name="FontDown" Width="80" Height="80" PreviewMouseLeftButtonDown="FontDownClick" />
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

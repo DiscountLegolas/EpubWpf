@@ -1,0 +1,96 @@
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    /* all headings centered */
+    clear: both
+    }
+p {
+    margin-top: 0.51em;
+    text-align: justify;
+    margin-bottom: 0.49em;
+    text-indent: 1em;
+    font-size: larger
+    }
+.mt2 {
+    margin-top: 2em
+    }
+/* Unindented paragraph */
+.noi {
+    text-indent: 0
+    }
+/* Centered unindented paragraph */
+.noic {
+    text-indent: 0;
+    text-align: center
+    }
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    clear: both
+    }
+hr.chap {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%
+    }
+@media print {
+    hr.chap {
+        display: none;
+        visibility: hidden
+        }
+    }
+hr.r15 {
+    width: 15%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 42.5%;
+    margin-right: 42.5%
+    }
+.works {
+    font-size: 0.9em;
+    clear: both
+    }
+.smcap {
+    font-variant: small-caps
+    }
+/* Images */
+img {
+    max-width: 100%;
+    /* no image to be wider than screen or containing div */
+    height: auto;
+    /* keep height in proportion to width */
+    }
+.figcenter {
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    page-break-inside: avoid;
+    /* limit size to no wider than natural image, even when screen is wide */
+    }
+.figcenter250 {
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    page-break-inside: avoid;
+    /* limit size */
+    }
+/* Transcriber's notes */
+.tnote {
+    background-color: #E6E6FA;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.5em
+    }
+.tntitle {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    clear: both
+    }
+/**/
